@@ -4,7 +4,7 @@ var cookiesEnabled = true; // Set this to false if locally
 
 $(document).ready(function() {
     if ((Cookies.get('surveyed') === undefined) && cookiesEnabled) {
-        window.location.replace('survey.html');
+        window.location.replace('pretest.html');
         return;
     }
     if (typeof Cookies.get('q1') !== 'undefined') {
